@@ -11,8 +11,29 @@ This is a more advanced version requires some expertise and patience, if you wan
 
 Start by [downloading all files here](https://github.com/OttoDIY/PLUS/archive/master.zip)
 
-## For the hardware
-Gather all the off the shelf parts in the BOM file that you'll need for this assembly, then 3d print the  .stl files and then follow the instruction manual to build your own robot.
+## For the hardware list of parts:
+
+Arduino Nano;
+Arduino Nano Shield I/O Extension Board
+Mini usb cable.
+HC-SR04 Ultrasound sensor.
+Mini servo MG90 9g x4 (each one should come with 2 pointed screws and one small screw also arm keys to attach legs and feet).
+active Buzzer 12mm diameter and 5V
+Female to Female breadboard connectors cable 10cm x24.
+4 AA Battery case
+1.5V AA batteries x4.
+Phillips screwdriver (important magnetized)
+micro Switch 8x8mm
+Touch sensors x3
+Sound sensor
+Bluetooth module HC-05 or HC06 or BLE
+
+And then you only need to 3D print 6 parts in total:
+
+3D printed head.
+3D printed body.
+3D printed leg x2.
+3D printed foot x2
 
 ## For the quick start programming and learners
 1. download mBlock.cc V3; is an opensource software released by MakeBlock for easy programming Robot by Drop and Drag blocks. Based on Scratch 2.0 (MIT), beside sharing the great Feature of Scratch, mBlock also integrated an Arduino Code generator for upload program into Arduino based Hardware.
@@ -83,6 +104,9 @@ Our broad community is awesome! we have been developing and improving OttoDIY pr
 | Otto meets MARS | March 2018 |Jason Snow |England |
 | arduinoblocks | April 2018 |Juan |Spain |
 | libraries update | May 2018 |Jason Snow |England |
+| Otto Arms | June 2018 |Jason Snow |England |
+| Otto desktop software | August 2018 |Jason Snow |England |
+| Otto Minion | September 2018 |CoolTrish Davies |Australia |
 
 Special thanks to all these #Ottobuilder that made and are making this project evolve and accessible to everyoone in the world. If we we are missing one please let us know!
 
@@ -92,11 +116,10 @@ Feel free to grab and mix ideas from this table for your Otto and if you are nic
 | Function-Feature  | sensor(input) | movement (output) | 
 | --- | --- | --- | 
 | drumer  |microphone|hands+stick|
-| Car-balancing  |accelerometer|4x4 wheels|
 | Sumo |IR|wheels+bumper|
 | omniwheel |magnet switch|wheels+rollers|
 | Train |IR|Steam generator|
-| Humanoid |variable resistor modes|+servos control|
+|  Car-balancing |variable resistor modes|+servos control|
 | Spider 6-8 legs |gestures|+vibrators|
 | hover or drone |accelerometer|+DC motor control|
 | look around xiaofang |timer|new head|
@@ -111,4 +134,4 @@ Feel free to grab and mix ideas from this table for your Otto and if you are nic
 | clap rhythm |arms codes|vibrators|
 
 ## License CC-BY-SA
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Otto DIY</span> by <a xmlns:cc="http://creativecommons.org/ns#"  property="cc:attributionName"> [www.ottodiy.com](http://www.ottodiy.com) </a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Otto DIY</span> by <a xmlns:cc="http://creativecommons.org/ns#"  property="cc:attributionName"> [www.ottodiy.com](https://www.ottodiy.com) </a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
