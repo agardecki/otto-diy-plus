@@ -11,36 +11,38 @@ This is a more advanced version requires some expertise and patience, if you wan
 
 Start by [downloading all files here](https://github.com/OttoDIY/PLUS/archive/master.zip)
 
-## For the hardware list of parts:
+## Hardware
 
-Arduino Nano;
-Arduino Nano Shield I/O Extension Board
-Mini usb cable.
-HC-SR04 Ultrasound sensor.
-Mini servo MG90 9g x4 (each one should come with 2 pointed screws and one small screw also arm keys to attach legs and feet).
-active Buzzer 12mm diameter and 5V
-Female to Female breadboard connectors cable 10cm x24.
-4 AA Battery case
-1.5V AA batteries x4.
-Phillips screwdriver (important magnetized)
-micro Switch 8x8mm
-Touch sensors x3
-Sound sensor
-Bluetooth module HC-05 or HC06 or BLE
+### To buy
 
-And then you only need to 3D print 6 parts in total:
+- Arduino Nano
+- Arduino Nano Shield I/O Extension Board
+- Mini usb cable
+- HC-SR04 Ultrasound sensor
+- Mini servo MG90 9g x4, each one should come with 2 pointed screws and one small screw also arm keys to attach legs and feet
+- Active Buzzer 12mm diameter and 5V
+- Female to Female breadboard connectors cable 10cm x24.
+- Micro Switch 8x8mm
+- Touch sensors x3
+- Sound sensor
+- Bluetooth module HC-05 or HC06 or BLE
+- 4 AA Battery case
+- 1.5V AA batteries x4.
+- Phillips screwdriver (important magnetized)
 
-3D printed head.
-3D printed body.
-3D printed leg x2.
-3D printed foot x2
+### [To print](3D%20print/)
+
+- 3D printed head
+- 3D printed body
+- 3D printed leg x2
+- 3D printed foot x2
 
 ## For the quick start programming and learners
-1. download mBlock.cc V3; is an opensource software released by MakeBlock for easy programming Robot by Drop and Drag blocks. Based on Scratch 2.0 (MIT), beside sharing the great Feature of Scratch, mBlock also integrated an Arduino Code generator for upload program into Arduino based Hardware.
-2. install Otto Extension in mBlock software use Arduino mode
-3. drag and drop functions, dance, sounds and conditionals from robot Otto blocks
-4. connect and check COM port
-5. upload your own code! 
+1. Download mBlock.cc V3; is an opensource software released by MakeBlock for easy programming Robot by Drop and Drag blocks. Based on Scratch 2.0 (MIT), beside sharing the great Feature of Scratch, mBlock also integrated an Arduino Code generator for upload program into Arduino based Hardware.
+2. Install Otto Extension in mBlock software use Arduino mode
+3. Drag and drop functions, dance, sounds and conditionals from robot Otto blocks.
+4. Connect and check COM port.
+5. Upload your own code! 
 
 ## For the advanced programming
 1. Download & Install Arduino IDE: https://www.arduino.cc/en/Main/Software also this driver if you have a clone board: http://www.wch.cn/download/CH341SER_EXE.html for PC, or http://www.wch.cn/download/CH341SER_MAC_ZIP.html for MAC
