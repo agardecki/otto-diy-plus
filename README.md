@@ -8,7 +8,8 @@ Otto DIY + can make everything that Otto DIY does + Bluetooth + APP + switch + s
 Is completely open source, Arduino compatible, 3D printable, once you have all components and tools you will be able to build your own Otto
 
 This is a more advanced version requires some expertise and patience, if you want to start slow as a beginner, please go to [Basic Otto DIY in Wikifactory](https://wikifactory.com/+OttoDIY/otto-diy) 
-We decided to leave github for the main codes and more advanced coders. or the latest changes please go and join our is a similar platform much more easy to use, visual and simple for all the community to collaborate. please go to [Otto DIY+ (PLUS) repository](https://wikifactory.com/+OttoDIY/otto-diy-plus)
+
+We decided to leave github for the main codes and more advanced coders. For the latest changes please go and join our [Otto DIY+ in Wikifactory](https://wikifactory.com/+OttoDIY/otto-diy-plus) is a similar platform but much more easy to use, visual and simple for all the community to collaborate.
 
 Start by [downloading all files here](https://github.com/OttoDIY/PLUS/archive/master.zip)
 <img src="https://github.com/OttoDIY/PLUS/blob/master/APP/OttoDIY%2B.jpg" width="900" align="center">
