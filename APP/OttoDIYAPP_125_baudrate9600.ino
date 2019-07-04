@@ -158,7 +158,7 @@ void loop() {
   if (Serial.available()>0 && MODE!=4){
   // test
     SCmd.readSerial();
-    //MODE=4;
+    MODE=4;
     Otto.putMouth(happyOpen);
   }
   switch (MODE) {
