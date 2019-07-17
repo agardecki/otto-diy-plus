@@ -12,13 +12,12 @@ This is a more advanced version requires some expertise and patience, if you wan
 We decided to leave github for the main codes and more advanced coders. For the latest changes please go and join our [Otto DIY+ in Wikifactory](https://wikifactory.com/+OttoDIY/otto-diy-plus) is a similar platform but much more easy to use, visual and simple for all the community to collaborate.
 
 Start by [downloading all files here](https://github.com/OttoDIY/PLUS/archive/master.zip)
-<img src="https://github.com/OttoDIY/PLUS/blob/master/APP/OttoDIY%2B.jpg" width="900" align="center">
 
 ## 1. Interact with other Otto builders
 Join the [Otto builders group in facebook](https://www.facebook.com/groups/ottodiy/)
 
 ## 2. Buy to build or make your own Otto!
-Difficult to find all the parts?, please support Otto DIY and open-source hardware by purchasing kits from (http://ottodiy.com), is a way to contribute and support this project to continue growing, Otto DIY invests time and resources providing this open source code, 
+Difficult to find all the parts?, please support Otto DIY and open-source hardware by purchasing kits from (https://www.ottodiy.com), is a way to contribute and support this project to continue growing, Otto DIY invests time and resources providing this open source code, 
 so with your help we can continue offering very affordable kits and constantly creating new robots open for all.
 
 After you have all components just follow the instruction manual in the files and build your own Otto in one hour!
@@ -60,7 +59,7 @@ If you want to make by your own gather all electronic parts that you'll need for
 - 1.5V AA batteries x4.
 - Phillips screwdriver (important magnetized)
 
-### [To print](3D%20print/)
+### [To print]
 
 - 3D printed head
 - 3D printed body
