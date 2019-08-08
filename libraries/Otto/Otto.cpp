@@ -1,4 +1,18 @@
 
+
+//-----------------------------------------------------------------
+
+//-- AUGUST 2019: modify for using different hardware
+
+//-- allows Otto from Hobby-Store.pl operate with Otto APP
+
+//-- Blazej Szyszko
+
+//-----------------------------------------------------------------
+
+
+
+
 #if defined(ARDUINO) && ARDUINO >= 100
   #include "Arduino.h"
 #else
@@ -229,21 +243,50 @@ void Otto::turn(float steps, int T, int dir){
   //-- When the right hip servo amplitude is higher, the steps taken by
   //--   the right leg are bigger than the left. So, the robot describes an 
   //--   left arc
-  int A[4]= {30, 30, 20, 20};
+  //-- Same coordination than for walking (see Otto::walk)
+
+  //-- The Amplitudes of the hip's oscillators are not igual
+
+  //-- When the right hip servo amplitude is higher, the steps taken by
+
+  //--   the right leg are bigger than the left. So, the robot describes an 
+
+  //--   left arc
+
+  int A[4]= {30, 30, 20, 10};
+
   int O[4] = {0, 0, 4, -4};
+
   double phase_diff[4] = {0, 0, DEG2RAD(-90), DEG2RAD(-90)}; 
+
     
+
   if (dir == LEFT) {  
-    A[0] = 30; //-- Left hip servo
+
+    A[0] = 40; //-- Left hip servo
+
     A[1] = 10; //-- Right hip servo
+
   }
+
   else {
+
     A[0] = 10;
-    A[1] = 30;
-  }
     
+    A[2] = 10;
+    
+    A[3] = 20;
+
+    A[1] = 40;
+
+  }
+
+    
+
   //-- Let's oscillate the servos!
+
   _execute(A, O, T, phase_diff, steps); 
+
 }
 
 
@@ -257,8 +300,8 @@ void Otto::turn(float steps, int T, int dir){
 void Otto::bend (int steps, int T, int dir){
 
   //Parameters of all the movements. Default: Left bend
-  int bend1[4]={90, 90, 62, 35}; 
-  int bend2[4]={90, 90, 62, 105};
+  int bend1[4]={105, 90, 50, 0}; 
+  int bend2[4]={90, 90, 50, 105};
   int homes[4]={90, 90, 90, 90};
 
   //Time of one bend, constrained in order to avoid movements too fast.
@@ -267,10 +310,12 @@ void Otto::bend (int steps, int T, int dir){
   //Changes in the parameters if right direction is chosen 
   if(dir==-1)
   {
-    bend1[2]=180-35;
-    bend1[3]=180-60;  //Not 65. Otto is unbalanced
-    bend2[2]=180-105;
-    bend2[3]=180-60;
+  	bend1[0]=90;
+  	bend1[1]=90-15;
+    bend1[2]=90+90;
+    bend1[3]=90+40;  
+    bend2[2]=90-15;
+    bend2[3]=90+40;
   }
 
   //Time of the bend movement. Fixed parameter to avoid falls
@@ -301,20 +346,22 @@ void Otto::shakeLeg (int steps,int T,int dir){
   int numberLegMoves=2;
 
   //Parameters of all the movements. Default: Right leg
-  int shake_leg1[4]={90, 90, 58, 35};   
-  int shake_leg2[4]={90, 90, 58, 120};
-  int shake_leg3[4]={90, 90, 58, 60};
+  int shake_leg1[4]={105, 90, 50, 0};   
+  int shake_leg2[4]={90, 90, 50, 120};
+  int shake_leg3[4]={90, 90, 50, 60};
   int homes[4]={90, 90, 90, 90};
 
   //Changes in the parameters if left leg is chosen
   if(dir==-1)      
   {
-    shake_leg1[2]=180-35;
-    shake_leg1[3]=180-58;
-    shake_leg2[2]=180-120;
-    shake_leg2[3]=180-58;
-    shake_leg3[2]=180-60;
-    shake_leg3[3]=180-58;
+  	shake_leg1[0]=90;
+  	shake_leg1[1]=105;
+    shake_leg1[2]=90+90;
+    shake_leg1[3]=90+40;
+    shake_leg2[2]=90-30;
+    shake_leg2[3]=90+40;
+    shake_leg3[2]=90+60;
+    shake_leg3[3]=90+50;
   }
   
   //Time of the bend movement. Fixed parameter to avoid falls
@@ -511,12 +558,12 @@ void Otto::crusaito(float steps, int T, int h, int dir){
 //---------------------------------------------------------
 void Otto::flapping(float steps, int T, int h, int dir){
 
-  int A[4]= {12, 12, h, h};
-  int O[4] = {0, 0, h - 10, -h + 10};
+  int A[4]= {0, 0, 20, 20};
+  int O[4] = {0, 0, -20, 20};
   double phase_diff[4] = {DEG2RAD(0), DEG2RAD(180), DEG2RAD(-90 * dir), DEG2RAD(90 * dir)};
   
   //-- Let's oscillate the servos!
-  _execute(A, O, T, phase_diff, steps); 
+  _execute(A, O, T/4, phase_diff, 3*steps); 
 }
 
 
